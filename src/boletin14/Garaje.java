@@ -5,6 +5,8 @@
  */
 package boletin14;
 
+import java.util.ArrayList;
+
 import java.util.Scanner;
 
 /**
@@ -16,7 +18,8 @@ public class Garaje {
     private int numeroPlazas = 0;
     private int opcion;
     private boolean i=true;
-    Coches coche[] = new Coches[5];
+    private String matricula;
+    ArrayList<Coches>coche=new ArrayList<>(5);
 
     Scanner sc = new Scanner(System.in);
     Scanner sc1 = new Scanner(System.in);
@@ -44,38 +47,45 @@ public class Garaje {
             case 1:
                 for (numeroPlazas = 0; numeroPlazas < 5; numeroPlazas++) {
                    
-                    coche[numeroPlazas] = new Coches(); 
-                    if (coche[numeroPlazas].getMatricula()==null){
-                    System.out.println("Insertar matricula");
-                    coche[numeroPlazas].setMatricula(sc1.nextLine());
+                   // coche[numeroPlazas] = new Coches(); 
+                    //if (coche[numeroPlazas].getMatricula()==null){
+                   // System.out.println("Insertar matricula");
+                   // coche[numeroPlazas].setMatricula(sc1.nextLine());
                     
                     }
-                    else System.out.println("Matricula existente");
+                 //   else System.out.println("Matricula existente");
                        break;
                 }
                     break;
-            case 2:
-                 for (numeroPlazas = 0; numeroPlazas < 5; numeroPlazas++) {
+           // case 2:
+               //  for (numeroPlazas = 0; numeroPlazas < 5; numeroPlazas++) {
                    
-                    coche[numeroPlazas] = new Coches(); 
+               //     coche[numeroPlazas] = new Coches(); 
                     
-                    System.out.println("Insertar matricula");
-                    String matricula = sc1.nextLine();
-                    if (coche[numeroPlazas].getMatricula()==matricula){
-                    coche[numeroPlazas].setMatricula(null);
-                    }
-                    else System.out.println("Matricula no existente");
-                    break;
+               //     System.out.println("Insertar matricula");
+                //    String matricula = sc1.nextLine();
+               //     if (coche[numeroPlazas].getMatricula().equals(matricula)){
+              //      coche[numeroPlazas].setMatricula(null);
+               //     }
+               //     else System.out.println("Matricula no existente");
+               //     break;
                 }
-                 break;
-            case 3:
+              //   break;
+          //  case 3:
                 
                  i=false;
-                 break;
+                // break;
                 }
+                
+                public void Add()
+                {
+                   Coches coches = new Coches(sc1.nextLine());
+                   coche.add(coches);
+                }
+    
             }
-        }
-}
+      //  }
+
         
 
         

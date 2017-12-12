@@ -5,6 +5,8 @@
  */
 package boletin14;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author jdominguezmartinan
@@ -18,6 +20,7 @@ public class Boletin14 {
         // TODO code application logic here
         Garaje obx1=new Garaje();
         obx1.insertarCoches();
+        
     }
     
 }
