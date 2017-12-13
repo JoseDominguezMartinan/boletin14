@@ -45,6 +45,7 @@ public class Garaje {
         opcion = sc.nextInt();
         switch (opcion) {
             case 1:
+                System.out.println("Insertar matricula");
                  Coches coches = new Coches(sc1.nextLine());
                    coche.add(coches);
                 
@@ -61,6 +62,8 @@ public class Garaje {
                 
                     break;
             case 2:
+                System.out.println("Insertar matricula");
+                coche.remove(sc1.nextLine());
                 
             
                //  for (numeroPlazas = 0; numeroPlazas < 5; numeroPlazas++) {
@@ -74,18 +77,19 @@ public class Garaje {
                //     }
                //     else System.out.println("Matricula no existente");
                //     break;
-                }
-              //   break;
-          //  case 3:
                 
-                // i=false;
-                // break;
+                 break;
+            case 3:
+                
+                 i=false;
+                 break;
                 }
                 
-              
+        }
     
             }
-      //  }
+      
+}
 
         
 
