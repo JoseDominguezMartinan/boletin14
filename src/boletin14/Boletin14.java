@@ -18,9 +18,9 @@ public class Boletin14 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Garaje obx1=new Garaje();
+        Garaje obx1 = new Garaje();
         obx1.insertarCoches();
-        
+
     }
-    
+
 }
